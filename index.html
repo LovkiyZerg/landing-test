@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Создание проекта · копия референса</title>
+    <!-- Подключаем шрифт Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Подключаем внешний CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <!-- Create project (главный заголовок) -->
+      <h1>Create project</h1>
+
+      <!-- Project name -->
+      <div class="field">
+        <div class="field-label">PROJECT NAME</div>
+        <input
+          class="input-base"
+          type="text"
+          placeholder="New brand launch"
+          value="New brand launch"
+          readonly
+          disabled
+        />
+      </div>
+
+      <!-- Category (специальный блок с двумя строками) -->
+      <div class="field">
+        <div class="field-label">CATEGORY</div>
+        <div class="category-block">
+          <div class="category-row">
+            <span class="category-main-text">Please select a category</span>
+            <span class="category-cross">✖</span>
+          </div>
+          <div class="category-sub">Choose a category</div>
+        </div>
+      </div>
+
+      <!-- Team size -->
+      <div class="field">
+        <div class="field-label">TEAM SIZE</div>
+        <div class="team-field">
+          <span class="team-text">Select team size</span>
+          <span class="team-check">✔</span>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="field">
+        <div class="field-label">DESCRIPTION</div>
+        <div class="description-box">Add a short project overview...</div>
+      </div>
+
+      <!-- Public project с переключателем ON -->
+      <div class="public-row">
+        <div class="public-text">
+          <h4>Public project</h4>
+          <p>Visible to your team</p>
+        </div>
+        <div class="toggle">
+          <span class="toggle-on">ON</span>
+        </div>
+      </div>
+
+      <!-- Блок чекбокса + Send updates + email нота -->
+      <div class="checkbox-area">
+        <div class="checkbox-line">
+          <span class="custom-checkbox"></span>
+          <span class="checkbox-label">Send updates</span>
+        </div>
+        <div class="email-note">Email weekly progress summaries</div>
+      </div>
+
+      <!-- Кнопка Create -->
+      <div class="create-btn">Create</div>
+    </div>
+  </body>
+</html>

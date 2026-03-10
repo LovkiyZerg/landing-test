@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0c0f;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+}
+
+.card {
+  max-width: 420px;
+  width: 100%;
+  background-color: #0f1114;
+  border-radius: 24px;
+  padding: 2rem 1.75rem 2rem 1.75rem;
+  box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+
+.card h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.75rem;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+.field-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: #9aa1b0;
+  margin-bottom: 0.4rem;
+}
+
+.input-base {
+  width: 100%;
+  background-color: #1c1f26;
+  border-radius: 14px;
+  border: 1px solid #2b2f38;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 400;
+  transition: border 0.1s;
+}
+
+.input-base::placeholder {
+  color: #5f677a;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.input-base:hover {
+  border-color: #3f4656;
+}
+
+/* Category block */
+.category-block {
+  background-color: #1c1f26;
+  border-radius: 14px;
+  border: 1px solid #2b2f38;
+  padding: 0.7rem 1rem;
+  transition: border 0.1s;
+}
+
+.category-block:hover {
+  border-color: #3f4656;
+}
+
+.category-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-main-text {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.category-cross {
+  color: #9aa1b0;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: default;
+}
+
+.category-sub {
+  font-size: 0.85rem;
+  color: #5f677a;
+  margin-top: 4px;
+  letter-spacing: 0.01rem;
+}
+
+/* Team field */
+.team-field {
+  background-color: #1c1f26;
+  border-radius: 14px;
+  border: 1px solid #2b2f38;
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: border 0.1s;
+}
+
+.team-field:hover {
+  border-color: #3f4656;
+}
+
+.team-text {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.team-check {
+  color: #20c997;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Description box */
+.description-box {
+  width: 100%;
+  background-color: #1c1f26;
+  border-radius: 14px;
+  border: 1px solid #2b2f38;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  color: #5f677a;
+  font-weight: 400;
+  transition: border 0.1s;
+}
+
+.description-box:hover {
+  border-color: #3f4656;
+}
+
+/* Public project row */
+.public-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.public-text h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.public-text p {
+  font-size: 0.8rem;
+  color: #7b849c;
+}
+
+.toggle {
+  background-color: #1c2c3a;
+  padding: 0.2rem 0.45rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #316b4b;
+}
+
+.toggle-on {
+  background-color: #1c4c3a;
+  color: #b0f0d0;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 30px;
+  letter-spacing: 0.3px;
+  border: 1px solid #28875f;
+}
+
+/* Checkbox area */
+.checkbox-area {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem 0 2rem 0;
+}
+
+.checkbox-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+  background-color: #1c1f26;
+  border: 2px solid #3f4656;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.checkbox-label {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.email-note {
+  font-size: 0.8rem;
+  color: #7b849c;
+  margin-left: 28px;
+  margin-top: 2px;
+}
+
+/* Create button */
+.create-btn {
+  width: 100%;
+  background-color: #2b2f3a;
+  border: none;
+  border-radius: 40px;
+  padding: 0.9rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5588ee;
+  letter-spacing: -0.2px;
+  cursor: default;
+  border: 1px solid #404759;
+  transition: 0.1s;
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.create-btn:hover {
+  background-color: #313644;
+  border-color: #5588ee;
+}
+
+/* Disabled input styling */
+.input-base[readonly] {
+  cursor: default;
+  opacity: 0.9;
+}
